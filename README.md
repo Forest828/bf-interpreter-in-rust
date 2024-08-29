@@ -1,2 +1,4 @@
-<h1>Brainfuck runtime compailer made in rust</h1>
+<h1>Brainfuck interpreter made in rust</h1>
+
+
 
