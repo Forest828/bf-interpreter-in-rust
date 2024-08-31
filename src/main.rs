@@ -19,12 +19,11 @@ fn main() {
             ',' => {
                 let mut temp = String::new();
                 let _ = io::stdin().read_line(&mut temp);
-                let temp = (temp.as_bytes()[0] as char) as u8;
-                vec[index] = temp;
+                vec[index] = (temp.as_bytes()[0] as char) as u8;
             },
             '[' => {
                 let loop_variable: usize = index;
-                let mut k: usize = (j + 1).try_into().unwrap();
+                let mut k: usize = j + 1;
                 let mut loop_section: String = String::new();
 
                 while contents.as_bytes()[k] as char != ']'{
